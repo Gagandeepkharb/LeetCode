@@ -1,10 +1,9 @@
-# Write your MySQL query statement below
 SELECT 
-    euni.unique_id,
-    e.name
+    EmployeeUNI.unique_id,
+    Employees.name
 FROM 
-    Employees e
+    Employees
 LEFT JOIN 
-    EmployeeUNI euni
+    EmployeeUNI
 ON 
-    e.id = euni.id;
+    Employees.id = EmployeeUNI.id;
